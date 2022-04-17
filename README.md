@@ -4,13 +4,13 @@
 
 国内
 ```shell
-ql repo https://github.91chi.fun//https://github.com/FengYun27/Sheep_Hair.git "m_" "expire" "ql|sendNotify|root|untitled"
+ql repo https://github.91chi.fun//https://github.com/xiaoyuyu00/xiaoSheep_Hair.git "m_" "expire" "ql|sendNotify|root|untitled"
 
 30 0/15 * * * ? 
 ```
 国外
 ```shell
-ql repo https://github.com/FengYun27/Sheep_Hair.git "m_" "expire" "ql|sendNotify|root|untitled"
+ql repo https://github.com/xiaoyuyu00/xiaoSheep_Hair.git "m_" "expire" "ql|sendNotify|root|untitled"
 
 30 0/15 * * * ? 
 ```
@@ -20,13 +20,13 @@ ql repo https://github.com/FengYun27/Sheep_Hair.git "m_" "expire" "ql|sendNotify
 国外
 
 ```shell
-ql raw https://raw.githubusercontent.com/FengYun27/Sheep_Hair/main/<脚本名称>.js
+ql raw https://raw.githubusercontent.com/xiaoyuyu00/xiaoSheep_Hair/main/<脚本名称>.js
 ```
 
 国内
 
 ```shell
-ql raw https://github.91chi.fun//https://raw.githubusercontent.com/FengYun27/Sheep_Hair/main/<脚本名称>.js
+ql raw https://github.91chi.fun//https://raw.githubusercontent.com/xiaoyuyu00/xiaoSheep_Hair/main/<脚本名称>.js
 ```
 
 ## 羊毛
