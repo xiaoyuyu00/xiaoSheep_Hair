@@ -17,13 +17,18 @@ header里的 D-Header-T
 */
 
 const $ = new Env('弟弟果园刷水滴');
-
+/*
 //ck放这里
 let wsgsig = `dd03-572lyEbaf5kGVl8BBxPMtA4EEwdBrAQ4DIdAmhJDEwdAUE7caTxesADbeLkAUlg2FP92r9gcgMZDiq4FeO6esl8KA5EE%2FA81AM1AtqDcB2O2%2FVX5BT2fnAmDAwE` //url里的 wsgsig
 let HeaderT = `gSG3tn6_vCQ9dUPXIZ6eA4VxjO8pjsbcMRDM4NvYSTokzD2OAjEMQOG7vNoa2YmdTNxuv3fYn9mFJkggqhF3RwPlk56-nakkddFFEaaRJsxCmqqqMCtpPUZxN4t11SZMJ62F9xoRRwfJxyfCFwnCN1nW5j2sl_AY5sIvWaqwkTu3y_36s5H6EP4Oy9uI8bL-SSyGa2ktakM4vc3zsT8DAAD__w==`//任意请求的header
 
 let sbody = `{"xbiz":"240301","prod_key":"didi-orchard","xpsid":"57e6c75a1a7d449296280e3ab53abd25","dchn":"O9aM923","xoid":"3-9fO-pQTd2UPoebE0N5XA","uid":"286475172545914","xenv":"passenger","xspm_from":"","xpsid_root":"57e6c75a1a7d449296280e3ab53abd25","xpsid_from":"","xpsid_share":"","platform":1,"token":"gSG3tn6_vCQ9dUPXIZ6eA4VxjO8pjsbcMRDM4NvYSTokzD2OAjEMQOG7vNoa2YmdTNxuv3fYn9mFJkggqhF3RwPlk56-nakkddFFEaaRJsxCmqqqMCtpPUZxN4t11SZMJ62F9xoRRwfJxyfCFwnCN1nW5j2sl_AY5sIvWaqwkTu3y_36s5H6EP4Oy9uI8bL-SSyGa2ktakM4vc3zsT8DAAD__w=="}`//goal里的body
 let lqbody = `{"xbiz":"240301","prod_key":"didi-orchard","xpsid":"57e6c75a1a7d449296280e3ab53abd25","dchn":"O9aM923","xoid":"3-9fO-pQTd2UPoebE0N5XA","uid":"286475172545914","xenv":"passenger","xspm_from":"","xpsid_root":"57e6c75a1a7d449296280e3ab53abd25","xpsid_from":"","xpsid_share":"","platform":1,"token":"gSG3tn6_vCQ9dUPXIZ6eA4VxjO8pjsbcMRDM4NvYSTokzD2OAjEMQOG7vNoa2YmdTNxuv3fYn9mFJkggqhF3RwPlk56-nakkddFFEaaRJsxCmqqqMCtpPUZxN4t11SZMJ62F9xoRRwfJxyfCFwnCN1nW5j2sl_AY5sIvWaqwkTu3y_36s5H6EP4Oy9uI8bL-SSyGa2ktakM4vc3zsT8DAAD__w=="}`//award的body
+*/
+let wsgsig = `dd03-rj%2FGYv247x4qDcKaw9YsUpANL6vX0mm9yUxj%2FNBIL6vWCiC1SAdWUzH16T4WCDKbYEZQXp525SfVdf0NOAZ%2Fh%2B9AHT0sff4bw%2F%2FtVu156T8VDj%2BdPAOU%2F8MM6x9`
+let HeaderT = `g-Ki9EP1LZtktno-lWMwefJ411uYCCvywp8oSOGjwFwkzDluw0AMhtG7fDUh_JxF4rBNnztkUZZmAsRwJfjuhuX-4R1MkdRFizCmk27MQrokGbOSvvVRvcYWarEas5G-9lAZq6oxO8nLK8YbCcY7WcLb1l3NQ7UM45Msxk4eXP6u_x87qZvxdVYqvZ7VN4mHyxWjyzF-nuXvg98DAAD__w==`
+let sbody = `{"xbiz":"240301","prod_key":"didi-orchard","xpsid":"bc9238f9975b45ddbe40ca3ae4d0d827","dchn":"O9aM923","xoid":"yE5H5sVDR4uUMdQp-AdjNw","uid":"281475104180329","xenv":"passenger","xspm_from":"","xpsid_root":"bc9238f9975b45ddbe40ca3ae4d0d827","xpsid_from":"","xpsid_share":"","platform":1,"token":"g-Ki9EP1LZtktno-lWMwefJ411uYCCvywp8oSOGjwFwkzDluw0AMhtG7fDUh_JxF4rBNnztkUZZmAsRwJfjuhuX-4R1MkdRFizCmk27MQrokGbOSvvVRvcYWarEas5G-9lAZq6oxO8nLK8YbCcY7WcLb1l3NQ7UM45Msxk4eXP6u_x87qZvxdVYqvZ7VN4mHyxWjyzF-nuXvg98DAAD__w=="}`
+
 
 
 
@@ -75,7 +80,7 @@ function lq(timeout = 0) {
                 'Content-Type': 'application/json;charset=utf-8',
                 'D-Header-T': `${HeaderT}`
             },
-            body: lqbody,
+            body: sbody,
 
         }
         $.post(url, async (err, resp, data) => {
